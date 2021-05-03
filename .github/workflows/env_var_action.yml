@@ -33,6 +33,7 @@ jobs:
           pwd
           ls -a          
           echo $RANDOM >> random.txt
+          echo "test" >> test.txt
           ls -a
           git add -A
           git commit -m "random file push from workflow"
