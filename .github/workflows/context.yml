@@ -18,7 +18,7 @@ jobs:
         run : |
           echo "${{ format('Hello {0}{1}{2}','World','!','!') }}" 
           echo "${{ startsWith('abc','ab') }}"      
-          echo "${{ strategy }}" 
-          echo "${{ matrix }}" 
+          echo "${{ toJson(strategy) }}" 
+          echo "${{ toJson(matrix) }}" 
           echo "${{ github }}"
           echo "${{ github.context }}" 
