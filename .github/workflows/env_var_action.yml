@@ -18,6 +18,9 @@ jobs:
           echo "${WF_ENV}"
           echo "${JOB_ENV}"
           echo "${{ secrets.WF_ENV }}"
+          echo "${{ github.actor }}"
+          echo "${GITHUB_ACTOR}"
+
 
 
 
