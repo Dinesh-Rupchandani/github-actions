@@ -17,4 +17,8 @@ jobs:
       - name: dump
         run : |
           echo "${{ format('Hello {0}{1}{2}','World','!','!') }}" 
-          echo "${{ startsWith('abc','ab')}}"       
+          echo "${{ startsWith('abc','ab') }}"      
+          echo "${{ strategy }}" 
+          echo "${{ matrix }}" 
+          echo "${{ github }}"
+          echo "${{ github.context }}" 
