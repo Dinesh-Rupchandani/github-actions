@@ -12,7 +12,12 @@ jobs:
         env:
           STEP_ENV:  ${{ toJson(github) }}     
   functions:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [6,8,10]
+        os: [ubuntu-latest.macos-latest,windows-latest]
+    #fail-fast: true
+    runs-on: ${{ matrix.os }}
     steps:
       - name: dump
         run : |

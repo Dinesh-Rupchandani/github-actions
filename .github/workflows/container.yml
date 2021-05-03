@@ -1,0 +1,15 @@
+name: container
+
+on: push
+
+jobs:
+
+  first:
+    runs-on: ubuntu-latest
+    container:
+      image:  node:13.5.0-alphine3.10 
+    steps:
+      - name: log node version
+        run: |
+          node -v
+          ls -a   
