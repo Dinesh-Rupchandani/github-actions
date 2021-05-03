@@ -16,4 +16,4 @@ jobs:
     steps:
       - name: dump
         run : |
-          echo "${{ format('Hello {}{}{}','World','!','!') }}"        
+          echo "${{ format('Hello {0}{1}{2}','World','!','!') }}"        
