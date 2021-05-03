@@ -7,5 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step1
-        run: echo "run first step"
+        run: | 
+          echo "run first step"
+          echo "${ GITHUB_REPOSITORY}"
+
 
