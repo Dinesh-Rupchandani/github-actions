@@ -20,11 +20,19 @@ jobs:
     steps:
     - name: os-version
       run: |
-        node -v
+        node -v 
         cat /etc/os-release
     - name: get-files
       run: |
         pwd
         ls -a
+    - name: checkout-files
+      uses: actions/checkout@v1
+    - name: get-files-after-checkout
+      run: |
+        pwd
+        ls -a      
+        
+        
         
               
