@@ -16,4 +16,5 @@ jobs:
     steps:
       - name: dump
         run : |
-          echo "${{ format('Hello {0}{1}{2}','World','!','!') }}"        
+          echo "${{ format('Hello {0}{1}{2}','World','!','!') }}" 
+          echo "${{ startsWith('abc','ab')}}"       
