@@ -17,5 +17,7 @@ jobs:
           echo "${GITHUB_REPOSITORY}"
           echo "${WF_ENV}"
           echo "${JOB_ENV}"
+          echo "${ secrets.WF_ENV }"
+
 
 
