@@ -21,4 +21,10 @@ jobs:
     - name: os-version
       run: |
         node -v
-        cat /etc/os-release      
+        cat /etc/os-release
+    - name: get-files
+      run: |
+        pwd
+        ls -a
+        
+              
