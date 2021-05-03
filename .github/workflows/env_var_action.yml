@@ -32,5 +32,10 @@ jobs:
           git checkout main
           pwd
           ls -a          
+          echo $RANDOM >> random.txt
+          ls -a
+          git add -a
+          git commit -m "random file push from workflow"
+          git push
 
 
