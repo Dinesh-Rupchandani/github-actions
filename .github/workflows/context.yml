@@ -25,5 +25,5 @@ jobs:
           echo "${{ startsWith('abc','ab') }}"      
           echo "${{ toJson(strategy) }}" 
           echo "${{ toJson(matrix) }}" 
-          echo "${{ github.event.after }}"
+          echo "${{ github.event }}"
           echo "${{ github.context }}" 
